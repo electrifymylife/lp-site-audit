@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preload" href="./src/assets/fonts/Onest-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./src/assets/fonts/Onest-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/styles/main.scss">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header__wrapper">
+        <img class="header__logo" src="./src/assets/img/header-logo.svg" width="162" height="35" alt="Site Audit Logo">
+        <nav class="header__nav">
+          <a class="header__nav-item header__nav-item--active" href="#">Products and services</a>
+          <a class="header__nav-item" href="#">Solutions</a>
+          <a class="header__nav-item" href="#">Pricing</a>
+          <a class="header__nav-item" href="#">Blog</a>
+          <a class="header__nav-item" href="#">Support</a>
+          <a class="header__nav-item" href="#">About Us</a>
+          <a class="header__nav-item" href="#">Contacts</a>
+        </nav>
+        <div class="header__buttons-wrapper">
+          <a class="header__phone" href="tel:+3721111234">+372 111 1234</a>
+          <button class="btn-login" type="button">Login</button>
+        </div>
+        <button class="header__burger" type="button">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__info">
+            <h1 class="hero__title">Get a hotel website audit <span class="hero__title--accent">for&nbsp;free</span></h1>
+            <p class="hero__text">If your hotel website does not bring any bookings, maybe, it is lacking something: content, structure, or SEO optimization. Sign up for a website audit, to find out the reasons why travelers do not find the website or do not book on it.</p>
+            <button class="btn-primary" type="button">Leave a request</button>
+          </div>
+          <picture class="hero__pic">
+            <source srcset="./src/assets/img/hero-image-2x.webp" width="1520" height="904" media="(min-width: 1400px)" type="image/webp">
+            <source srcset="./src/assets/img/hero-image.webp" width="760" height="452" type="image/webp">
+            <img class="hero__image" src="./src/assets/img/hero-image.webp" width="760" height="452" alt="An image with a website blocks example">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="check">
+      <div class="container">
+        <h2 class="check__title">Things we <span class="check__title--accent">check</span></h2>
+        <p class="check__subtitle">In 14 years in business, our auditors have studied over 2&nbsp;500 hotel websites to reveal what affects  website conversion into&nbsp;bookings.</p>
+        <div class="check__criteria">
+          <picture class="check__criteria-mockup-pic">
+            <source srcset="./src/assets/img/web-mockup-2x.webp" width="1140" height="1494" media="(min-width: 1400px)" type="image/webp">
+            <source srcset="./src/assets/img/web-mockup.webp" width="760" height="996" type="image/webp">
+            <img class="check__criteria-mockup-img" src="./src/assets/img/web-mockup.webp" width="760" height="996" alt="An image with a website full page mockup">
+          </picture>
+          <ul class="check__criteria-list keen-slider">
+            <li class="check__criteria-item check__criteria-item--ranking keen-slider__slide">
+              <img class="check__criteria-item-img" src="./src/assets/img/slider-ranking.webp" width="640" height="320" alt="An image showing searching process on a web page">
+              <div class="check__criteria-item-info">
+                <h3 class="check__criteria-item-title">Ranking in search engines</h3>
+                <p>Your website’s ranking directly affects the number of website visitors. That is why we look for reasons that prevent the website from getting to the top of search results.</p>
+              </div>
+            </li>
+            <li class="check__criteria-item check__criteria-item--navigation keen-slider__slide">
+              <img class="check__criteria-item-img" src="./src/assets/img/slider-navigation.webp" width="640" height="320" alt="An image showing a navigation element on a web page">
+              <div class="check__criteria-item-info">
+                <h3 class="check__criteria-item-title">Website navigation</h3>
+                <p>We check if the navigation menu of the website is clear and easy for searching. It should contain all the necessary menu sections that shall be laid out in the way most familiar for users.</p>
+              </div>
+            </li>
+            <li class="check__criteria-item check__criteria-item--content keen-slider__slide">
+              <img class="check__criteria-item-img" src="./src/assets/img/slider-content.webp" width="640" height="320" alt="An image showing an example of content on a web page">
+              <div class="check__criteria-item-info">
+                <h3 class="check__criteria-item-title">Content</h3>
+                <p>The website should have all the information that travelers might be looking for when they search for accommodation. We check if your hotel website has it all, and it is easy to perceive.</p>
+              </div>
+            </li>
+            <li class="check__criteria-item check__criteria-item--marketing keen-slider__slide">
+              <img class="check__criteria-item-img" src="./src/assets/img/slider-marketing.webp" width="640" height="320" alt="An image showing an example of special offers block on a web page">
+              <div class="check__criteria-item-info">
+                <h3 class="check__criteria-item-title">Marketing and converting features</h3>
+                <p>The converting hotel website encourages users to book. This means that it has pricing information, Call-to-Action buttons, and purchase motivators all in the right places.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <img class="footer__logo" src="./src/assets/img/footer-logo.svg" width="162" height="35" alt="Site Audit Logo">
+        <ul class="footer__socials">
+          <li>
+            <a class="footer__socials-link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+              <h3 class="visually-hidden">Facebook</h3>
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="./src/assets/img/sprite.svg#social-logo-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer__socials-link" href="http://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+              <h3 class="visually-hidden">Instagram</h3>
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="./src/assets/img/sprite.svg#social-logo-ig"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer__socials-link" href="https://linkedin.com/" target="_blank" rel="noreferrer noopener">
+              <h3 class="visually-hidden">LinkedIn</h3>
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="./src/assets/img/sprite.svg#social-logo-in"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer__socials-link" href="https://youtube.com/" target="_blank" rel="noreferrer noopener">
+              <h3 class="visually-hidden">Youtube</h3>
+              <svg class="icon" width="35" height="24">
+                <use xlink:href="./src/assets/img/sprite.svg#social-logo-yt"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__payments">
+          <li class="footer__payments-item">
+            <img src="./src/assets/img/payment-system-visa.svg" width="72" height="27" alt="Visa payment system">
+          </li>
+          <li class="footer__payments-item">
+            <h3 class="visually-hidden">Mastercard payment system</h3>
+            <svg class="icon"  width="38" height="30">
+              <use xlink:href="./src/assets/img/sprite.svg#payment-system-mastercard"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./src/script/slider/keen-slider.js" defer></script>
+  <script src="./src/script/main.js" defer></script>
+</body>
+</html>

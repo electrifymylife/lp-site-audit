@@ -1,0 +1,86 @@
+@use "../abstracts";
+
+.hero {
+  position: relative;
+  padding: 169px 0 171px;
+  overflow-x: hidden;
+
+  @media (max-width: abstracts.$bp-large) {
+    padding: 50px 0 41px;
+  }
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    padding: 46px 0 48px;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    flex-direction: column;
+  }
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+}
+
+.hero__info {
+  width: 47%;
+  font-size: abstracts.$font-size-hero;
+  line-height: abstracts.$line-height-hero;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    width: 100%;
+  }
+}
+
+.hero__title {
+  margin-bottom: 27px;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    margin-bottom: 21px;
+  }
+}
+
+.hero__title--accent {
+  color: abstracts.$color-primary;
+}
+
+.hero__text {
+  margin-bottom: 48px;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    margin-bottom: 39px;
+  }
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    margin-bottom: 31px;
+  }
+}
+
+.hero__pic {
+  position: absolute;
+  top: 17.5%;
+  right: -5%;
+  width: 55%;
+
+  @media (max-width: abstracts.$bp-large) {
+    top: 5%;
+  }
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    position: static;
+    width: 100%;
+  }
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  max-width: 760px;
+}

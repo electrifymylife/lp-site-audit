@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// 1. Base stuff
+@use "base/modern-normalize";
+@use "base/base";
+@use "base/fonts";
+@use "base/typography";
+@use "base/helpers";
+
+// 2. Layout-related sections
+@use "layout/header";
+@use "layout/footer";
+
+// 3. Components
+@use "components/buttons";
+@use "components/hero";
+@use "components/check";
+
+// 4. Pages
+@use "pages/home";
+
+// 5. Vendors
+@use "vendors/keen-slider";
+
+// 6. Re-declaring vendors
+@use "vendors-extensions/keen-slider-custom";

@@ -1,0 +1,70 @@
+@use "../abstracts";
+
+.footer {
+  background-color: abstracts.$color-primary;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 35px 0;
+
+  @media (max-width: abstracts.$bp-small-tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    gap: 28px;
+  }
+}
+
+.footer__logo {
+  @media (max-width: abstracts.$bp-small-tablet) {
+    width: 172px;
+    height: auto;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-right: 45px;
+}
+
+.footer__socials-link {
+  display: flex;
+
+  @media (hover: hover) and (pointer: fine) {
+    @keyframes fadeIn {
+      from {
+        opacity: 0.3;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      animation: fadeIn 1s ease-in 0.5ms alternate;
+    }
+  }
+}
+
+.footer__payments {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  min-height: 38px;
+}
+
+.footer__payments-item {
+  display: flex;
+  align-items: center;
+}

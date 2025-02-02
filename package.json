@@ -1,0 +1,25 @@
+{
+  "name": "lp-site-audit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:html": "linthtml *.html --config .linthtmlrc.cjs",
+    "lint:scss": "npx stylelint \"**/*.scss\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.10.1",
+    "autoprefixer": "^10.4.20",
+    "linthtml-config-htmlacademy": "^1.0.25",
+    "sass": "^1.83.4",
+    "stylelint": "^16.14.1",
+    "stylelint-config-htmlacademy": "^4.2.3",
+    "vite": "^6.0.11"
+  }
+}

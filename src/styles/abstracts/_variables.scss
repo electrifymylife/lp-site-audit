@@ -1,0 +1,81 @@
+// Container's maximum width
+
+$container-padding: 20px;
+$container-max-width: calc(1200px + $container-padding * 2);
+
+// Breakpoints
+
+$bp-small-mobile: 360px;
+$bp-large-mobile: 767px;
+$bp-small-tablet: 768px;
+$bp-middle-tablet: 991px;
+$bp-large: 1200px;
+
+// Colors
+
+$color-main-bg: #ffffff;
+$color-main: #161919;
+$color-primary: #4f56d3;
+
+$color-menu: #414c59;
+
+$color-check-bg: #d1d4ff;
+$color-check-el-bg: #f6f6ff;
+
+$color-slider-title-sm: #2b3d56;
+
+$color-btn-primary: #ffffff;
+$color-btn-primary-bg: #161919;
+$color-btn-primary-bg-hover: #4c4d6b;
+
+$color-btn-login: #161919;
+$color-btn-login-hover: #000000;
+
+$color-btn-burger: #354f71;
+
+// Typography
+
+// --- main
+$font-family-main: "Onest", sans-serif;
+$font-size-main: 16px;
+$line-height-main: 25.6px;
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// --- buttons
+
+$font-size-btn-login: 14px;
+$line-height-btn-login: 28px;
+
+$font-size-btn-primary: 18px;
+$line-height-btn-primary: 48px;
+
+// --- titles
+
+$font-size-h1: 55px;
+$line-height-h1: 60.5px;
+$font-size-h1-md: 48px;
+$line-height-h1-md: 52.8px;
+$font-size-h1-sm: 40px;
+$line-height-h1-sm: 44px;
+
+$font-size-h2: 48px;
+$line-height-h2: 58px;
+$font-size-h2-sm: 32px;
+$line-height-h2-sm: 32px;
+
+$font-size-h3: 28px;
+$line-height-h3: 33.6px;
+$font-size-h3-md: 24px;
+$line-height-h3-md: 28.8px;
+
+// --- blocks, elements
+
+$font-size-menu: 14px;
+
+$font-size-hero: 18px;
+$line-height-hero: 27px;
+
+$font-size-check: 18px;
+$line-height-check-sm: 28.5px;

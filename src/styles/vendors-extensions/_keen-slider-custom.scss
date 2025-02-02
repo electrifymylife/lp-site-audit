@@ -1,0 +1,68 @@
+@use "../abstracts";
+
+.keen-slider:not([data-keen-slider-disabled]) {
+  @media (min-width: abstracts.$bp-middle-tablet) {
+    position: unset;
+    display: unset;
+    width: unset;
+    overflow: unset;
+    user-select: unset;
+    touch-action: unset;
+  }
+}
+
+.keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
+  @media (min-width: abstracts.$bp-middle-tablet) {
+    position: absolute;
+    min-height: unset;
+    width: unset;
+    overflow: unset;
+    transform: unset !important;
+  }
+
+  @media (max-width: abstracts.$bp-middle-tablet) and (min-width: abstracts.$bp-small-tablet) {
+    min-width: 320px !important;
+  }
+}
+
+.navigation-wrapper {
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    position: relative;
+    overflow-x: hidden;
+    margin-right: -20px;
+  }
+}
+
+.dots {
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    padding: 10px 0;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.dot {
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid abstracts.$color-primary;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.dot:focus {
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    outline: none;
+  }
+}
+
+.dot--active {
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    background: abstracts.$color-primary;
+  }
+}

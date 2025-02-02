@@ -1,0 +1,47 @@
+@use "../abstracts";
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  min-height: 48px;
+  font-size: abstracts.$font-size-btn-primary;
+  color: abstracts.$color-btn-primary;
+  background-color: abstracts.$color-btn-primary-bg;
+  border-radius: 50px;
+  transition: background-color 0.3s ease-in-out;
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    padding: 0 16px;
+    min-height: 44px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover,
+    &:focus {
+      background-color: abstracts.$color-btn-primary-bg-hover;
+    }
+  }
+}
+
+.btn-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  min-height: 28px;
+  font-size: abstracts.$font-size-btn-login;
+  color: abstracts.$color-btn-login;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 50px;
+  transition: color 0.3s ease-in-out;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover,
+    &:focus {
+      color: abstracts.$color-btn-login-hover;
+    }
+  }
+}

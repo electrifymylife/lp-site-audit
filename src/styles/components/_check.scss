@@ -1,0 +1,209 @@
+@use "../abstracts";
+
+.check {
+  position: relative;
+  padding: 98px 0 150px;
+  overflow-x: hidden;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    padding: 64px 0 54px;
+    background-color: abstracts.$color-check-bg;
+  }
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    padding: 69px 0 54px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: abstracts.$color-check-bg;
+    width: 100%;
+    height: 46.3%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @media (max-width: abstracts.$bp-middle-tablet) {
+      display: none;
+    }
+  }
+}
+
+.check__title {
+  text-align: center;
+  margin-bottom: 12px;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    margin-bottom: 17px;
+  }
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    margin-bottom: 12px;
+  }
+}
+
+.check__title--accent {
+  font-weight: abstracts.$font-weight-bold;
+}
+
+.check__subtitle {
+  font-size: abstracts.$font-size-check;
+  text-align: center;
+  margin-bottom: 124px;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    line-height: abstracts.$line-height-check-sm;
+  }
+}
+
+.check__criteria {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.check__criteria-mockup-pic {
+  padding-right: 42px;
+  z-index: -1;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    display: none;
+  }
+}
+
+.check__criteria-mockup-img {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+}
+
+.check__criteria-list {
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    padding: 41px 0 33px;
+  }
+}
+
+.check__criteria-item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 360px;
+  background-color: abstracts.$color-check-el-bg;
+  box-shadow: 0 5px 20px rgba(abstracts.$color-primary, 0.15);
+  border-radius: 20px;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    position: static;
+  }
+
+  @media (max-width: abstracts.$bp-large-mobile) {
+    border-radius: 8px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url('data:image/svg+xml,<svg width="192" height="214" viewBox="0 0 192 214" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.3" cx="30" cy="30" r="30" transform="matrix(-1 0 0 1 60 0)" fill="%23FF7328"/><circle opacity="0.3" cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 50 10)" fill="%23FF7328"/><path d="M40.6667 30C40.6667 35.891 35.891 40.6667 30 40.6667C24.109 40.6667 19.3333 35.891 19.3333 30C19.3333 24.109 24.109 19.3333 30 19.3333C35.891 19.3333 40.6667 24.109 40.6667 30ZM188 211C188 209.895 188.895 209 190 209C191.105 209 192 209.895 192 211H188ZM192 201C192 202.105 191.105 203 190 203C188.895 203 188 202.105 188 201H192ZM188 195C188 193.895 188.895 193 190 193C191.105 193 192 193.895 192 195H188ZM192 185C192 186.105 191.105 187 190 187C188.895 187 188 186.105 188 185H192ZM188 179C188 177.895 188.895 177 190 177C191.105 177 192 177.895 192 179H188ZM192 169C192 170.105 191.105 171 190 171C188.895 171 188 170.105 188 169H192ZM188 163C188 161.895 188.895 161 190 161C191.105 161 192 161.895 192 163H188ZM192 153C192 154.105 191.105 155 190 155C188.895 155 188 154.105 188 153H192ZM188 147C188 145.895 188.895 145 190 145C191.105 145 192 145.895 192 147H188ZM192 137C192 138.105 191.105 139 190 139C188.895 139 188 138.105 188 137H192ZM188 131C188 129.895 188.895 129 190 129C191.105 129 192 129.895 192 131H188ZM192 121C192 122.105 191.105 123 190 123C188.895 123 188 122.105 188 121H192ZM188 115C188 113.895 188.895 113 190 113C191.105 113 192 113.895 192 115H188ZM192 105C192 106.105 191.105 107 190 107C188.895 107 188 106.105 188 105H192ZM188 99C188 97.8954 188.895 97 190 97C191.105 97 192 97.8954 192 99H188ZM192 89C192 90.1046 191.105 91 190 91C188.895 91 188 90.1046 188 89H192ZM188 83C188 81.8954 188.895 81 190 81C191.105 81 192 81.8954 192 83H188ZM192 73C192 74.1046 191.105 75 190 75C188.895 75 188 74.1046 188 73H192ZM188 67C188 65.8954 188.895 65 190 65C191.105 65 192 65.8954 192 67H188ZM192 57C192 58.1046 191.105 59 190 59C188.895 59 188 58.1046 188 57H192ZM188 51C188 49.8954 188.895 49 190 49C191.105 49 192 49.8954 192 51H188ZM192 41C192 42.1046 191.105 43 190 43C188.895 43 188 42.1046 188 41H192ZM187.743 36.2568C187.423 35.1997 188.02 34.0831 189.078 33.7629C190.135 33.4426 191.251 34.0399 191.572 35.097L187.743 36.2568ZM184.903 28.4284C185.96 28.7487 186.557 29.8653 186.237 30.9224C185.917 31.9795 184.8 32.5769 183.743 32.2566L184.903 28.4284ZM179.15 32C178.045 32 177.15 31.1046 177.15 30C177.15 28.8954 178.045 28 179.15 28V32ZM169.65 28C170.755 28 171.65 28.8954 171.65 30C171.65 31.1046 170.755 32 169.65 32V28ZM163.95 32C162.845 32 161.95 31.1046 161.95 30C161.95 28.8954 162.845 28 163.95 28V32ZM154.45 28C155.555 28 156.45 28.8954 156.45 30C156.45 31.1046 155.555 32 154.45 32V28ZM148.75 32C147.645 32 146.75 31.1046 146.75 30C146.75 28.8954 147.645 28 148.75 28V32ZM139.25 28C140.355 28 141.25 28.8954 141.25 30C141.25 31.1046 140.355 32 139.25 32V28ZM133.55 32C132.445 32 131.55 31.1046 131.55 30C131.55 28.8954 132.445 28 133.55 28V32ZM124.05 28C125.155 28 126.05 28.8954 126.05 30C126.05 31.1046 125.155 32 124.05 32V28ZM118.35 32C117.245 32 116.35 31.1046 116.35 30C116.35 28.8954 117.245 28 118.35 28V32ZM108.85 28C109.955 28 110.85 28.8954 110.85 30C110.85 31.1046 109.955 32 108.85 32V28ZM103.15 32C102.045 32 101.15 31.1046 101.15 30C101.15 28.8954 102.045 28 103.15 28V32ZM93.65 28C94.7546 28 95.65 28.8954 95.65 30C95.65 31.1046 94.7546 32 93.65 32V28ZM87.95 32C86.8454 32 85.95 31.1046 85.95 30C85.95 28.8954 86.8454 28 87.95 28V32ZM78.45 28C79.5546 28 80.45 28.8954 80.45 30C80.45 31.1046 79.5546 32 78.45 32V28ZM72.75 32C71.6454 32 70.75 31.1046 70.75 30C70.75 28.8954 71.6454 28 72.75 28V32ZM63.25 28C64.3546 28 65.25 28.8954 65.25 30C65.25 31.1046 64.3546 32 63.25 32V28ZM57.55 32C56.4454 32 55.55 31.1046 55.55 30C55.55 28.8954 56.4454 28 57.55 28V32ZM48.05 28C49.1546 28 50.05 28.8954 50.05 30C50.05 31.1046 49.1546 32 48.05 32V28ZM42.35 32C41.2455 32 40.35 31.1046 40.35 30C40.35 28.8954 41.2455 28 42.35 28V32ZM32.85 28C33.9546 28 34.85 28.8954 34.85 30C34.85 31.1046 33.9546 32 32.85 32V28ZM188 214V211H192V214H188ZM188 201V195H192V201H188ZM188 185V179H192V185H188ZM188 169V163H192V169H188ZM188 153V147H192V153H188ZM188 137V131H192V137H188ZM188 121V115H192V121H188ZM188 105V99H192V105H188ZM188 89V83H192V89H188ZM188 73V67H192V73H188ZM188 57V51H192V57H188ZM188 41V38H192V41H188ZM188 38C188 37.3907 187.91 36.8061 187.743 36.2568L191.572 35.097C191.851 36.0182 192 36.9935 192 38H188ZM183.743 32.2566C183.194 32.0902 182.609 32 182 32V28C183.007 28 183.982 28.1493 184.903 28.4284L183.743 32.2566ZM182 32H179.15V28H182V32ZM169.65 32H163.95V28H169.65V32ZM154.45 32H148.75V28H154.45V32ZM139.25 32H133.55V28H139.25V32ZM124.05 32H118.35V28H124.05V32ZM108.85 32H103.15V28H108.85V32ZM93.65 32H87.95V28H93.65V32ZM78.45 32H72.75V28H78.45V32ZM63.25 32H57.55V28H63.25V32ZM48.05 32H42.35V28H48.05V32ZM32.85 32H30V28H32.85V32Z" fill="%23FF7328"/></svg>');
+    width: 192px;
+    height: 214px;
+    z-index: -1;
+
+    @media (max-width: abstracts.$bp-middle-tablet) {
+      display: none;
+    }
+  }
+}
+
+.check__criteria-item--ranking {
+  top: -61px;
+  right: 0;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    top: unset;
+    left: unset;
+  }
+
+  &::before {
+    top: calc(50% - 117px);
+    left: -171px;
+  }
+}
+
+.check__criteria-item--navigation {
+  top: 250px;
+  left: 0;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    top: unset;
+    left: unset;
+  }
+
+  &::before {
+    transform: scaleX(-1);
+    top: -223px;
+    right: -128px;
+  }
+}
+
+.check__criteria-item--content {
+  bottom: 283px;
+  right: 0;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    bottom: unset;
+    left: unset;
+  }
+
+  &::before {
+    top: -58px;
+    left: -171px;
+  }
+}
+
+.check__criteria-item--marketing {
+  left: 0;
+  bottom: -2px;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    bottom: unset;
+    left: unset;
+  }
+
+  &::before {
+    transform: scaleX(-1);
+    top: -107px;
+    right: -128px;
+  }
+}
+
+.check__criteria-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    padding: 0 40px 40px;
+  }
+}
+
+.check__criteria-item-img {
+  display: none;
+
+  @media (max-width: abstracts.$bp-middle-tablet) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.check__criteria-item-title {
+  color: abstracts.$color-primary;
+}

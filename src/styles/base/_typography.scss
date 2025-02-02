@@ -1,0 +1,44 @@
+@use "../abstracts";
+
+body {
+  font-family: abstracts.$font-family-main;
+  font-size: abstracts.$font-size-main;
+  line-height: abstracts.$line-height-main;
+  font-weight: abstracts.$font-weight-regular;
+}
+
+h1 {
+  font-size: abstracts.$font-size-h1;
+  line-height: abstracts.$line-height-h1;
+
+  @media (max-width: abstracts.$bp-small-tablet) {
+    font-size: abstracts.$font-size-h1-md;
+    line-height: abstracts.$line-height-h1-md;
+  }
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    font-size: abstracts.$font-size-h1-sm;
+    line-height: abstracts.$line-height-h1-sm;
+  }
+}
+
+h2 {
+  font-size: abstracts.$font-size-h2;
+  line-height: abstracts.$line-height-h2;
+  font-weight: abstracts.$font-weight-regular;
+
+  @media (max-width: abstracts.$bp-small-mobile) {
+    font-size: abstracts.$font-size-h2-sm;
+    line-height: abstracts.$line-height-h2-sm;
+  }
+}
+
+h3 {
+  font-size: abstracts.$font-size-h3;
+  line-height: abstracts.$line-height-h3;
+
+  @media (max-width: abstracts.$bp-small-tablet) {
+    font-size: abstracts.$font-size-h3-md;
+    line-height: abstracts.$line-height-h3-md;
+  }
+}
