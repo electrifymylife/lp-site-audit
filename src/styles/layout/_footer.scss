@@ -40,21 +40,7 @@
 .footer__socials-link {
   display: flex;
 
-  @media (hover: hover) and (pointer: fine) {
-    @keyframes fadeIn {
-      from {
-        opacity: 0.3;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    &:hover {
-      animation: fadeIn 1s ease-in 0.5ms alternate;
-    }
-  }
+  @include abstracts.animation-fade;
 }
 
 .footer__payments {

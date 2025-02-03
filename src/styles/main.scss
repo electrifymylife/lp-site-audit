@@ -13,11 +13,9 @@
 
 // 3. Components
 @use "components/buttons";
-@use "components/hero";
-@use "components/check";
 
 // 4. Pages
-@use "pages/home";
+@use "pages/home/glob";
 
 // 5. Vendors
 @use "vendors/keen-slider";

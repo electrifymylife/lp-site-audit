@@ -93,8 +93,9 @@ function navigation(slider) {
 const slider = new KeenSlider(
   '.check__criteria-list',
   {
+    loop: true,
     slides: {
-      perView: 2,
+      perView: "auto",
       spacing: 24,
     },
     breakpoints: {

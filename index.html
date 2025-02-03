@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Site Audit Landing Page</title>
   <link rel="preload" href="./src/assets/fonts/Onest-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./src/assets/fonts/Onest-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./src/styles/main.scss">
@@ -16,13 +15,29 @@
       <div class="header__wrapper">
         <img class="header__logo" src="./src/assets/img/header-logo.svg" width="162" height="35" alt="Site Audit Logo">
         <nav class="header__nav">
-          <a class="header__nav-item header__nav-item--active" href="#">Products and services</a>
-          <a class="header__nav-item" href="#">Solutions</a>
-          <a class="header__nav-item" href="#">Pricing</a>
-          <a class="header__nav-item" href="#">Blog</a>
-          <a class="header__nav-item" href="#">Support</a>
-          <a class="header__nav-item" href="#">About Us</a>
-          <a class="header__nav-item" href="#">Contacts</a>
+          <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--active">
+              <a href="#">Products and services</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Solutions</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Support</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">About Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
         </nav>
         <div class="header__buttons-wrapper">
           <a class="header__phone" href="tel:+3721111234">+372 111 1234</a>
@@ -139,7 +154,7 @@
           </li>
           <li class="footer__payments-item">
             <h3 class="visually-hidden">Mastercard payment system</h3>
-            <svg class="icon"  width="38" height="30">
+            <svg class="icon" width="38" height="30">
               <use xlink:href="./src/assets/img/sprite.svg#payment-system-mastercard"></use>
             </svg>
           </li>

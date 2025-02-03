@@ -1,0 +1,25 @@
+@mixin animation-fade {
+  @keyframes fadeIn {
+    from {
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      animation: fadeIn 1.5s ease-in 0.5ms alternate;
+    }
+  }
+}
+
+@mixin transition-ease-in-out($target, $time: 0.3s) {
+  transition: $target $time ease-in-out;
+}
+
+@mixin transition-simple($time: 0.3s) {
+  transition: $time;
+}

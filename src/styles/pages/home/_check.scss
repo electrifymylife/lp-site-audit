@@ -1,4 +1,9 @@
-@use "../abstracts";
+@use "../../abstracts";
+
+@mixin reset-absolute {
+  top: unset;
+  left: unset;
+}
 
 .check {
   position: relative;
@@ -126,12 +131,11 @@
   right: 0;
 
   @media (max-width: abstracts.$bp-middle-tablet) {
-    top: unset;
-    left: unset;
+    @include reset-absolute;
   }
 
   &::before {
-    top: calc(50% - 117px);
+    top: 41px;
     left: -171px;
   }
 }
@@ -141,8 +145,7 @@
   left: 0;
 
   @media (max-width: abstracts.$bp-middle-tablet) {
-    top: unset;
-    left: unset;
+    @include reset-absolute;
   }
 
   &::before {
@@ -153,12 +156,11 @@
 }
 
 .check__criteria-item--content {
-  bottom: 283px;
+  top: 438px;
   right: 0;
 
   @media (max-width: abstracts.$bp-middle-tablet) {
-    bottom: unset;
-    left: unset;
+    @include reset-absolute;
   }
 
   &::before {
@@ -169,11 +171,10 @@
 
 .check__criteria-item--marketing {
   left: 0;
-  bottom: -2px;
+  top: calc(100% - 289px);
 
   @media (max-width: abstracts.$bp-middle-tablet) {
-    bottom: unset;
-    left: unset;
+    @include reset-absolute;
   }
 
   &::before {

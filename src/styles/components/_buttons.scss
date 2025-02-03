@@ -8,9 +8,11 @@
   min-height: 48px;
   font-size: abstracts.$font-size-btn-primary;
   color: abstracts.$color-btn-primary;
+  text-align: center;
   background-color: abstracts.$color-btn-primary-bg;
   border-radius: 50px;
-  transition: background-color 0.3s ease-in-out;
+
+  @include abstracts.transition-ease-in-out(background-color);
 
   @media (max-width: abstracts.$bp-small-mobile) {
     padding: 0 16px;
@@ -30,17 +32,21 @@
   align-items: center;
   justify-content: center;
   padding: 0 14px;
+  min-width: 67px;
   min-height: 28px;
   font-size: abstracts.$font-size-btn-login;
+  text-align: center;
   color: abstracts.$color-btn-login;
   background-color: transparent;
   border: 1px solid;
   border-radius: 50px;
-  transition: color 0.3s ease-in-out;
+
+  @include abstracts.animation-fade;
 
   @media (hover: hover) and (pointer: fine) {
     &:hover,
     &:focus {
+      font-weight: abstracts.$font-weight-medium;
       color: abstracts.$color-btn-login-hover;
     }
   }
