@@ -1,3 +1,5 @@
+import KeenSlider from 'keen-slider';
+
 const body = document.querySelector('body');
 const burger = document.querySelector('.header__burger');
 const headerNav = document.querySelector('.header__nav');
